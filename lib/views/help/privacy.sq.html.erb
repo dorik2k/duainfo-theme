@@ -1,0 +1,59 @@
+<% @title = "Privacia juaj" %>
+<%= render :partial => 'sidebar' %>
+
+<div id="left_column_flip">
+    <h1 id="privacy"><%= @title %> <a href="#privacy">#</a> </h1>
+    <dl>
+        <dt id="email_address">Kush mund te shohe adresen time te postes elektronike? <a href="#email_address">#</a> </dt>
+        <dd>
+            <p>Ne nuk do e shfaqim adresen tuaj elektronike tek askush, pervecse kur jemi te detyruar sipas ligjit, ose kur ju nga kerkoni qe ta shfaqim. Ketu perfshihen institucionet publike te cileve po ju dergoni nje kerkese. Ata shohin vetem nje adrese elektronike @<%= AlaveteliConfiguration::incoming_email_domain %> qe eshte specifike per ate kerkese. </p>
+            <p>Nese dergoni mesazh tek nje perdorues tjeter ne kete faqe, atehere adresa juaj do te shfaqet per ta. Ju do te lajmeroheni qe dicka e tille do te ndodhe.</p>
+        </dd>
+        <dt id="nasty_spam">Do te dergoni spam-e te keqija ne adresen time elektronike? <a href="#nasty_spam">#</a> </dt>
+        <dd><p>JO. Pasi te jeni kycur ne <%= site_name %> ne do ju dergojme vetem mesazhe elektronike qe lidhen me kerkesen qe keni bere, nje mesazh lajmerues qe ju jeni abonuar, ose per arsye te tjera qe ju keni autorizuar specifikisht. Ne kurre nuk do ta japim adresen tuaj tek askush, pervecse kur jemi te detyruar nga ligji , ose kur ju nga kerkoni qe ta shfaqim.</p> </dd>
+        <dt id="public_request">Pse emri dhe kerkesa im do te shfaqen publikisht ne kete faqe? <a href="#public_request">#</a> </dt>
+        <dd>
+            <p>Ne publikojme kerkesen tuaj ne Internet, ne menyre qe te gjithe mund t'a lexojne dhe ta perdorin informacionin qe ju keni gjetur. Dhe kerkesat zakonisht nuk i fshijme (<a href="#delete_requests">me shume detaje</a>). </p>
+            <p>Emri juaj eshte i lidhur me kerkesen qe keni bere, prandaj duhet te publikohet gjithashtu. Eshte e drejte, qe ne te publikojme gjithashtu dhe emrat e nenpunesve ci il te cilet ju pergjigjen kerkesave tuaja. Duke perdorur emrin tuaj te vertete i jepni mundesi dhe te tjetret t'ju kontaktojne dhe t'ju ndihmonjne ne kerkimin qe po beni, ose t'ju mbeshtesin. </p>
+            <p>Sipas ligjit, ju duhet te perdorni emrin tuaj te vertete qe kerkesat te jene te vlefshme per te qene kerkesa te se Drejtes se Informimit. Shihni pyetjen tjeter per alternativa nese nuk deshironi te publikoni emrin tuaj te plote. </p>
+        </dd>
+        <dt id="real_name">A mund te bej nje kerkese per te Drejten e Informimit duke perdorur nje pseudonim? <a href="#real_name">#</a> </dt>
+        <dd>
+            <p>Teknikisht, ju duhet te perdorni emrin e vertet qe kerkesat te jene te vlefshme sipas ligjit. <a href="http://www.idp.al/images/Legjislacion/Ligje/160-2014-DI.pdf">Shihni kete</a> </p>
+            <p>Megjithate, ne rast se asnje forme e paraqitur me poshte nuk ju pershtatet (vazhdoni lexoni pikat e tjera), <strong>DUAINFO.org</strong> mund te dergoje kerkesen ne emrin tuaj, pasi te na keni kontaktuar ne adresen tone elektronike dhe keni shprehur se cfare kerkese per te Drejten e Informimit doni te dergoni dhe tek cili institucion publik. Keshtu emrin juaj nuk do te shfaqen ne institucionin publik. p>
+            <p>Ka dhe alternativa te tjera sesa perdorimin i nje pseudonimi.</p>
+            <li>Grate mund te perdorin emrin e tyre te beqarise.</li>
+            <li>Perdorni emrin e nje organizate, emrin e nje kompanie, emrin komercial te nje kompanie.</li>
+            <li>Kerkojini dikujt tjeter te beje kerkesen ne emrin tuaj.</li>
+            </ul>
+            <p></p>
+            <p>Sic u tha dhe me siper, nese nuk doni te jeni ne asnje menyre i shfaqur publikisht dhe nuk keni nje kontakt tjeter qe mund ta perdorni atehere DUAINFO.org do te kryeje kerkesat ne emrin tuaj. Ju lutemi <a href="/help/contact">na kontaktoni</a> me nje arsye te mire pse ju apo nje miku juaj nuk mund t'a bej dot kerkesen ne emrin tuaj. Ne nuk kemi mundesi te akomodojme kerkesat e te gjitheve ne kete menyre.</p>
+            <p>Ju lutem mos u perpiqni te personifikoni dike tjeter.</p> 
+        </dd>
+        <dt id="full_address">Ata me kane kerkuar adresen postare! <a href="#full_address">#</a> </dt>
+        <dd>
+            <p>Nese nje institucion publik kerkon adresen tuaj te plote postare, pergjigju se sipas Nenit 11 pika 1 per ligjin te se Drejtes se Informimit kerkohet adrese korrespondence dhe adresa juaj elektronike eshte e mjaftueshme. </p>
+        </dd>
+        <dt id="postal_answer">Jo jo, ata kerkojne nje adrese postare per te derguar pergjigjen dorazi! <a href="#postal_answer">#</a> </dt>
+        <dd>
+            <p>Nese nje institucion ka vetem kopje ne leter per informacionin qe ju deshironi ata mund t'ju kerkojne nje adrese postare. Si fillim kerkoi qe ta dergojne te skanuar.
+            <p>Nese nuk funksionon dhe te duhet te japesh adresen atehere mund te japesh adresen e skuadres DUAINFO.org por me pare na kontaktoni. </p>
+        </dd>
+        <dt id="delete_requests">A mund te fshini kerkesat e mia, ose te ndryshoni emrin tim? <a href="#delete_requests">#</a> </dt>
+        <dd>
+            <p><%= site_name %> eshte nje arshive publike permanente per kerkesat e te Drejtes e Informimit. Edhe nese pergjigja e marre ndaj kerkeses suaj nuk ju duke me e dobishme, ajo mund te jete me dobi per te tjeret. Per kete arsye, ne nuk do i fshijme kerkesat. </p>
+            <p>Vetem ne rrethana te vecant ne mund te fshijme ose ndryshojme emrin tuaj ne faqen tone, <a href="#takedown">shihni faqen tjeter</a>.
+                Ne te njejten menyre ne mund te fshijme dhe informacione te tjera personale. </p>
+            <p> Nese jeni i shqetesuar per kete para se te beni kerkesen tuaj, shihni seksionin per <a href="#real_name">pseudonimet</a>.</p>
+        </dd>
+        <dt id="takedown">Mund t'i fshini informacionet e mia personale? <a href="#takedown">#</a> </dt>
+        <dd>
+            <p>Nese shihni informacione personale ne faqe, te cilat deshiron qe ne t'i fshijme, atehere ju lutemi <a href="/help/contact">na e beni te ditur</a>.
+                Specifikoni me saktesi cfare informacioni besoni eshte problematike dhe arsyen pse, si dhe ku eshte shfaqur ne faqe. </p>
+            <p>Nese eshte informacion personal sensitiv qe eshte vendosur aksidintalisht, atehere normalisht ne do ta fshijme. Zakonisht do te marrim ne konsiderate vetem kerkesat per fshirjen e informacionet personale te cilat na raportohen nga nje person i shqetesuar, por per informacione sensitive ne do ju ishim shume mirenjohes te na njoftoni nese shihni dicka te tille.</p>
+            <p>Ne besojme se eshte ne interesin e publikut te gjere ruajtja e emrave te nenpunesve te institucioneve publike. Emra e tyre do te fshihen vetem ne raste te vecanta, ne raste te tilla kur zbulimi i nje emri apo pozicioni te nenpunesi civil do te kompromentonte sigurine e tyre.  Nese ju jeni nje nenpunes i tille dhe kerkon qe emri juaj te fshihet, ju duhet te na dergoni nje kerkese leshuar nga drejtori juaj. Kjo kerkese duhet te vertetoje qe nje rrezik eshte vene re dhe kjo tejkalon interesin publik dhe duhet te vertetojne qe jane bere perpjekje per te fshehur emrin e personit dhe ne faqen e tyre elektronike.</p>
+            <p>Per te gjitha kerkesate tjera ne aplikojme nje test per interesin publik per te vendosur nese informacioni duhet fshire.
+        </dd>
+    </dl>
+    <p><strong>Mesoni me shume</strong> nga Ndihme per <a href="/help/officers">nenpunesit e te Drejtes se Informimit</a> --&gt;
+</div>
