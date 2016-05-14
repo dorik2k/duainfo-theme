@@ -1,24 +1,19 @@
 <div id="right_column_flip">
-    <h2>Si funksionon</h2>
-    <ul class="no_bullets">
-	<li><%= link_to_unless_current "Cfare eshte DuaInfo", help_api_path %></li>
-        <li><%= link_to_unless_current "Rreth nesh", help_about_path %></li>
-        <li><%= link_to_unless_current "Kerkesat - Si behen, si procesohen", help_requesting_path %></li>
-        <li><%= link_to_unless_current "Kordinatoret e te Drejtes se Informimit", help_credits_path %></li>
-        <li><%= link_to_unless_current "Si te gjesh nje institucion", help_officers_path %></li>
-        <li><%= link_to_unless_current "Privatesia juaj", help_privacy_path %></li>
-	<!--
-        <li><%= link_to_unless_current "Procesimi i kerkesave", help_credits_path %></li>
-        <li><%= link_to_unless_current "Programmers API", help_api_path %></li>
-        <li><%= link_to_unless_current "Help us", help_general_path(:action => 'help_out') %></li>
-        <li><%= link_to_unless_current "Advanced search", advanced_search_path %></li>
-        -->
-    </ul>
-
-    <h2 id="contact">Na kontakto</h2>
-    <p>Nese nuk gjen ketu pergjigje per pyetjen tende, ose nese thjesht 
-    do te na besh te ditur dicka mbi kete faqe, <a href="<%= help_contact_path %>">na kontakto</a>.
-    </p>
+	<h2>Si funksionon</h2>
+	<ul class="no_bullets">
+		<li><%= link_to_unless_current "Cfare eshte DuaInfo", help_duainfo_path %></li>
+		<li><%= link_to_unless_current "Rreth nesh", help_about_path %></li>
+		<li><%= link_to_unless_current "Kerkesat - Si behen, si procesohen", help_requesting_path %></li>
+		<li><%= link_to_unless_current "Kordinatoret e te Drejtes se Informimit", help_officers_path %></li>
+		<li><%= link_to_unless_current "Si te gjesh nje institucion", help_credits_path %></li>
+		<li><%= link_to_unless_current "Privatesia juaj", help_privacy_path %></li>
+		<!--
+    <li><%= link_to_unless_current "Procesimi i kerkesave", help_credits_path %></li>
+    <li><%= link_to_unless_current "Programmers API", help_api_path %></li>
+    <li><%= link_to_unless_current "Help us", help_general_path(:action => 'help_out') %></li>
+    <li><%= link_to_unless_current "Advanced search", advanced_search_path %></li>
+    -->
+	</ul>
+	<h2 id="contact">Na kontakto</h2>
+	<p>Nese nuk gjen ketu pergjigje per pyetjen tende, ose nese thjesht do te na besh te ditur dicka mbi kete faqe, <a href="<%= help_contact_path %>">na kontakto</a>.</p>
 </div>
-
-

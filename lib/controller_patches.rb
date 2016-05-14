@@ -14,5 +14,7 @@ Rails.configuration.to_prepare do
     HelpController.class_eval do
         def help_out
         end
+	def duainfo
+	end
     end
 end
